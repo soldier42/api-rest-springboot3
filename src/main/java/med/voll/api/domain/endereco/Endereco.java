@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 import med.voll.api.domain.medico.DadosEndereco;
 
 @Embeddable
-@Getter
-@NoArgsConstructor
 @AllArgsConstructor
 public class Endereco {
     private String logradouro;
@@ -52,5 +50,35 @@ public class Endereco {
         if (endereco.uf() != null) {
             this.uf = endereco.uf();
         }
+    }
+
+    // g e s
+
+    public String getUf() {
+        return uf;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public String getLogradouro() {
+        return logradouro;
     }
 }
